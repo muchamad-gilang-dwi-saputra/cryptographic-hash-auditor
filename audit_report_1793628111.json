@@ -1,0 +1,30 @@
+{
+    "timestamp": "2026-11-02T21:01:51.574855",
+    "password_metadata": {
+        "length": 27,
+        "entropy_bits": 100.87
+    },
+    "auto_tuned_bcrypt_cost": 12,
+    "audit_results": [
+        {
+            "algorithm": "MD5 (Legacy)",
+            "latency_ms": 0.0064,
+            "compliance_status": "FAIL"
+        },
+        {
+            "algorithm": "SHA-256 (Fast)",
+            "latency_ms": 0.0024,
+            "compliance_status": "FAIL"
+        },
+        {
+            "algorithm": "Bcrypt (Tuned Cost=12)",
+            "latency_ms": 204.6537,
+            "compliance_status": "PASS"
+        },
+        {
+            "algorithm": "Argon2id (RFC 9106)",
+            "latency_ms": 35.9391,
+            "compliance_status": "EXCELLENT"
+        }
+    ]
+}
